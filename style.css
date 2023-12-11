@@ -1,0 +1,192 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+.hero {
+  background-color: #0040C1;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #003298;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+            animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: #0051f4;
+  }
+  .cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  .cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+  
+  @-webkit-keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    image-orientation: inherit;
+    background-color: rgba(142, 55, 176, 0.747);
+    background-size: auto;
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    color: rgba(125, 6, 172, 0.83);
+    
+}
+
+.calculator {
+    color: black;
+    opacity: 2;
+    border-radius: 10px;
+    width: fit-content;
+    align-content: end;
+    margin: auto;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "Teko", serif;
+    margin-left: 30px;
+}
+
+.date-picker {
+
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding:10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    align-items: centre;
+}
+
+.date-picker input {
+    flex: 1;
+    margin-right: 29px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+
+
+}
+
+.date-picker button {
+
+    background: #8518bc;
+    padding: 5px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
+.date-picker input::-webkit-calender-picker-indicator {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100%-10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+
+    font-size: 30px;
+
+}
+
+#result span {
+    color: rgb(255 255 255);
+}
+
+.end {
+    background-color: antiquewhite;
+    padding: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+
+
+}
+
+.end p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+
+}
